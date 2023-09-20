@@ -303,21 +303,24 @@ const flow = (() => {
             }
 
             if (h3[0].innerHTML == "The Wicked Witch") {
-                imageFele.setAttribute("src", "file:///Users/andrewperez/Downloads/new-witch-cut-2.png");
+                imageFele.setAttribute("src", "/Users/andrewperez/repos/Tic-Tac-Toe/imgs_lib/new-witch-cut-2.png");
+                imageFele.setAttribute("alt", "The Wicked Witch");
                 imageFele.style.width = "12rem";
                 imageFele.style.height = "18rem";
                 imageFele.style.position = "relative";
                 imageFele.style.left = "0.5rem";
                 imageContainer[0].style.padding = "1rem";
             } else if (h3[0].innerHTML == "T-Rex") {
-                imageFele.setAttribute("src", "file:///Users/andrewperez/Downloads/t-rex-image.png");
+                imageFele.setAttribute("src", "/Users/andrewperez/repos/Tic-Tac-Toe/imgs_lib/t-rex-image.png");
+                imageFele.setAttribute("alt", "T-Rex");
                 imageFele.style.width = "17rem";
                 imageFele.style.height = "12rem";
                 imageFele.style.position = "relative";
                 imageFele.style.top = "4rem";
                 imageContainer[0].style.padding = "1rem";
             } else {
-                imageFele.setAttribute("src", "file:///Users/andrewperez/Downloads/viking-image.png");
+                imageFele.setAttribute("src", "/Users/andrewperez/repos/Tic-Tac-Toe/imgs_lib/viking-image.png");
+                imageFele.setAttribute("alt", "Bjorn the Viking");
                 imageFele.style.width = "16rem";
                 imageFele.style.height = "22rem";
                 imageFele.style.position = "relative";
@@ -347,21 +350,24 @@ const flow = (() => {
             }
 
             if (h3[1].innerHTML == "The Wicked Witch") {
-                imageSele.setAttribute("src", "file:///Users/andrewperez/Downloads/new-witch-cut-2.png");
+                imageSele.setAttribute("src", "/Users/andrewperez/repos/Tic-Tac-Toe/imgs_lib/new-witch-cut-2.png");
+                imageSele.setAttribute("alt", "The Wicked Witch");
                 imageSele.style.width = "12rem";
                 imageSele.style.height = "18rem";
                 imageSele.style.position = "relative";
                 imageSele.style.left = "0.5rem";
                 imageContainer[1].style.padding = "1rem";
             } else if (h3[1].innerHTML == "T-Rex") {
-                imageSele.setAttribute("src", "file:///Users/andrewperez/Downloads/t-rex-image.png");
+                imageSele.setAttribute("src", "/Users/andrewperez/repos/Tic-Tac-Toe/imgs_lib/t-rex-image.png");
+                imageSele.setAttribute("alt", "T-Rex");
                 imageSele.style.width = "17rem";
                 imageSele.style.height = "12rem";
                 imageSele.style.position = "relative";
                 imageSele.style.top = "4rem";
                 imageContainer[1].style.padding = "1rem";
             } else {
-                imageSele.setAttribute("src", "file:///Users/andrewperez/Downloads/viking-image.png");
+                imageSele.setAttribute("src", "/Users/andrewperez/repos/Tic-Tac-Toe/imgs_lib/viking-image.png");
+                imageSele.setAttribute("alt", "Bjorn the Viking");
                 imageSele.style.width = "16rem";
                 imageSele.style.height = "22rem";
                 imageSele.style.position = "relative";
