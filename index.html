@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="player-menu">
+        <div class="flex-container">
+            <h1>Tic-Tac-Toe
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <line x1="10" y1="0" x2="1000" y2="0"></line>
+                </svg>
+            </h1>
+            <div class="x-header-cont">
+                <div class="header-marks">X</div>
+                <div class="header-marks">X</div>
+                <div class="header-marks">X</div>
+            </div>
+            <div class="o-header-cont">
+                <div class="header-marks">O</div>
+                <div class="header-marks">O</div>
+            </div>
+        </div>
+        <div class="player-flex">
+            <div class="player-choice">
+                <h2 class="choice-title">Player One</h2>
+                <label for="player-computer">
+                    Type:
+                    <select class="player-option" name="player-computer" id="player-computer">
+                        <option value="player">Player</option>
+                        <option value="computer">Computer</option>
+                        <option value="AI">AI</option>
+                    </select>
+                </label>
+                <div>
+                    <button class="move left" id="firstLeft">
+                        
+                    </button>
+                    <button class="move right" id="firstRight">
+                       
+                    </button>
+                    <div class="img-container">
+                        <img class="one" src="file:///Users/andrewperez/Downloads/new-witch-cut-2.png"  alt="">
+                        <img class="two" src="file:///Users/andrewperez/Downloads/t-rex-image.png" alt="">
+                        <img class="three" src="file:///Users/andrewperez/Downloads/viking-image.png" alt="">
+                    </div>
+                </div>
+                <h3 class="charName">The Wicked Witch</h3>
+                <button class="select">Select</button>
+                <button class="cancel">Cancel</button>
+            </div>
+            <div class="player-choice">
+                <h2 class="choice-title">Player Two</h2>
+                <label for="player-computer">
+                    Type:
+                    <select class="player-option" name="player-computer" id="player-computer">
+                        <option value="player">Player</option>
+                        <option value="computer">Computer</option>
+                        <option value="AI">AI</option>
+                    </select>
+                </label>
+                <div>
+                    <button class="move left" id="secondLeft"></button>
+                    <button class="move right" id="secondRight"></button>
+                    <div class="img-container">
+                        <img class="one" src="file:///Users/andrewperez/Downloads/new-witch-cut-2.png" alt="" id="one">
+                        <img class="two" src="file:///Users/andrewperez/Downloads/t-rex-image.png" alt="" id="two">
+                        <img class="three" src="file:///Users/andrewperez/Downloads/viking-image.png" alt="" id="three">
+                    </div>
+                </div>
+                <h3 class="charName">The Wicked Witch</h3>
+                <button class="select">Select</button>
+                <button class="cancel">Cancel</button>
+    
+            </div>
+        </div>
+    </div>
+    <div class="game-flex">
+        <div class="player-one-image">
+            <h2>Player One</h2>
+            <h3 class="player-icon">X</h3>
+            <div class="player-image-container"></div>
+        </div>
+        <div class="gameboard">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="player-two-image">
+            <h2>Player Two</h2>
+            <h3 class="player-icon">O</h3>
+            <div class="player-image-container"></div>
+        </div>
+    </div>
+    
+    <script src="index.js" defer></script>
+</body>
+</html>

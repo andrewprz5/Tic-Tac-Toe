@@ -8,4 +8,4 @@ a function under said object and implement it into the game. If we used
 separate functions in separate objects, it would just take more time and 
 effort, and the code will take up more space. HTML and CSS are included
 to allow the user to interact with the game in the most fluid and fun way 
-possible.
+possible. 

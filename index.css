@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+html {
+    position: relative;
+    height: 100vh;
+}
+
+body {
+    background-color: orange;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+    }
+}
+
+h1 {
+    font-size: 10vw;
+    align-self: center;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    order: 2;
+}
+
+svg {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 0;
+}
+
+line {
+    stroke: white;
+    stroke-width: 1vw;
+}
+
+@keyframes strike {
+     100% {
+        width: 100%;
+    }
+}
+
+.header-marks {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.x-header-cont,
+.o-header-cont {
+    display: flex;
+}
+
+.x-header-cont {
+    order: 1;
+    justify-content: space-evenly;
+}
+
+.o-header-cont {
+    order: 3;
+    justify-content: space-evenly;
+}
+
+.game-flex {
+    display: none;
+    margin: auto;
+    background-color: rgb(230, 134, 25);
+    flex-wrap: wrap;
+    height: max-content;
+}
+
+.gameboard {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    font-size: 5rem;
+    margin: 5rem auto;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid white;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1200px) {
+    .gameboard {
+        order: 3;
+    }
+}
+
+.gameboard > div {
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.square {
+    padding: 3rem;
+}
+
+.square:nth-child(1) {
+    border-top-left-radius: 20px;
+}
+
+.square:nth-child(3) {
+    border-top-right-radius: 20px;
+}
+
+.square:nth-child(7) {
+    border-bottom-left-radius: 20px;
+}
+
+.square:nth-child(9) {
+    border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+    .game-flex {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 80vw;
+    }
+}
+
+.player-one-image,
+.player-two-image {
+    margin: 5rem auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.player-image-container {
+    background-color: rgb(238 132 11);
+    padding: 1rem;
+    border-radius: 20px;
+    border: 3px solid white;
+    margin: 3rem 1rem 0 1rem;
+    height: 28.8rem;
+}
+
+.player-icon {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.player-menu {
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh auto;
+    background-color: rgb(230, 134, 25);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.player-flex {
+    height: max-content;
+    display: flex;
+    text-align: center;
+    opacity: 0;
+    position: relative;
+}
+
+@media (max-width: 850px) {
+    .player-flex {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        overflow: scroll;
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 100%;
+    }
+}
+
+.player-choice {
+    width: 50%;
+    letter-spacing: 0.25rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player-choice:nth-child(1) {
+    border-right: 35px solid orange;
+}
+
+.player-choice:nth-child(2) {
+    border-left: 35px solid orange;
+}
+
+.choice-title {
+    margin: 3rem auto 1.5rem;
+    font-size: 2.25rem;
+}
+
+label {
+    margin-left: 1rem;
+}
+
+select {
+    background-color: #e99c0e;
+    border: 0.5px solid #fece75;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.player-choice > div {
+    width: fit-content;
+    position: relative;
+    margin: auto;
+}
+
+.img-container {
+    display: flex;
+    overflow: hidden;
+    margin-top: 5rem;
+    width: 300px;
+    height: 300px;
+}
+
+.img-container img {
+    max-height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.move {
+    position: absolute;
+    top: 155px;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border-left: 8px solid #ffc861;
+    border-bottom: 8px solid #ffc861;
+    border-right: 0;
+    border-top: 0;
+
+}
+
+.left.move {
+    left: -2vw;
+    transform: rotate(45deg);
+}
+
+.right.move {
+    right: -2vw;
+    transform: rotate(-135deg);
+}
+
+.one, .three {
+    position: relative;
+}
+
+.one {
+    left: 45px;
+}
+
+.three {
+    bottom: 20px;
+    left: 10px;
+}
+
+.charName {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    letter-spacing: 0.2rem;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    margin: 1.25rem 1rem;
+    border: 1px solid white;
+    padding: 4px;
+    width: 12rem;
+    height: 2.5rem;
+    top: 50%;
+}
+
+.select, .cancel {
+    margin: 4rem 0;
+    letter-spacing: 0.4rem;
+    height: 4rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+@media (max-width: 850px) {
+    .select, .cancel {
+        margin: 2rem 0;
+    }
+}
+
+.cancel {
+    display: none;
+}
+
+.select:hover, 
+.cancel:hover {
+    background-color: orange;
+}
+
+.select:hover,
+.cancel:hover,
+.game-btn:hover {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.game-btn:hover {
+    background-color: #fcb737;
+    letter-spacing: 0.25rem;
+}
+
+.difficulty {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .player-choice {
+        width: 100%;
+    }
+
+    .player-choice:nth-child(1),
+    .player-choice:nth-child(2) {
+        border: none;
+    }
+
+    .startDiv {
+        position: relative !important;
+        top: 76% !important;
+        left: 49% !important;
+        background-color: rgb(230, 134, 25) !important;
+        border: none !important;
+        padding: 1rem 0 2.5rem 0 !important;
+        width: 16rem !important;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .game-btn {
+        margin-top: 3rem;
+        letter-spacing: 0.5rem;
+        font-size: 1.25rem;
+        width: 20rem;
+        position: relative;
+        top: 0;
+        right: 2.5rem;
+    }
+}
